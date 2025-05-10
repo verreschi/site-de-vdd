@@ -1,0 +1,245 @@
+
+.next-container {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 10;
+}
+
+.progress-bar {
+  width: 150px;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: 6px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 0%;
+  height: 100%;
+  background-color: red;
+  transition: width 5s linear;
+}
+
+.next-container.show {
+  display: flex;
+}
+
+
+
+
+
+
+/* Estilo para o botão de Tela Cheia */
+button[style*="background-color: #e50914"] {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+  padding: 10px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(229, 9, 20, 0.4);
+  transition: all 0.3s ease;
+}
+
+button[style*="background-color: #e50914"]:hover {
+  background-color: #ff1f1f;
+  transform: scale(1.05);
+}
+
+
+
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.skip-btn, .next-btn {
+  position: absolute;
+  bottom: 60px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: rgba(229, 9, 20, 0.9);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  display: none; /* Escondido por padrão */
+  z-index: 10;
+  transition: opacity 0.3s ease;
+}
+
+.next-btn {
+  bottom: 20px;
+}
+
+.show {
+  display: block !important;
+}
+
+
+/* Estilos para o container do vídeo */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 20px auto; /* Centraliza o vídeo */
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Estilos para os botões */
+.video-actions {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 10;
+}
+
+.video-actions button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #e50914, #b00610);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(229, 9, 20, 0.4);
+  transition: all 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+}
+
+.video-actions button.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.video-actions button:hover {
+  background: linear-gradient(135deg, #ff1f1f, #c60b0b);
+  transform: scale(1.05);
+}
+
+/* Estilos para a seção de episódios */
+.episodes {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.episode-list {
+  display: flex;
+  justify-content: center; /* Centraliza os cards */
+  gap: 20px; /* Espaço entre os cards */
+  flex-wrap: wrap; /* Permite que os cards quebrem para a linha de baixo se necessário */
+}
+
+.episode {
+  width: 200px; /* Define um tamanho fixo para cada card */
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.episode img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.episode:hover {
+  transform: scale(1.05);
+}
+
+.episode p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #fff;
+}
+
+/* Estilos para a seção de temporadas */
+.season-selector {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.season-selector select {
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #e50914;
+  background-color: #222;
+  color: white;
+  cursor: pointer;
+}
+
+.season-selector select option {
+  background-color: #222;
+  color: white;
+}
+
+/* Estilos para a seção de mais temporadas */
+.more-seasons {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.more-seasons h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.season-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.season-card {
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.season-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.season-card p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.season-card:hover {
+  transform: scale(1.05);
+}

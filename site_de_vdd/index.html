@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jujutsu Filmes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 style="text-align:center; color:white;">Bem-vindo ao Jujutsu Filmes</h1>
+  </header>
+
+  <div class="video-container">
+    <video id="bannerVideo" autoplay muted loop>
+      <source src="assets/trailer.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeos.
+    </video>
+
+    <div class="video-actions">
+      <button id="muteBtn">🔇</button>
+      <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.5" />
+    </div>
+  </div>
+
+  <section class="episodes">
+    <h2>Capítulos</h2>
+    <div class="episode-list">
+      <div class="episode card" data-trailer="assets/ep1.mp4" data-title="Episódio 1" data-desc="Começo da Jornada" data-page="#">
+        <img src="assets/thumb1.jpg" alt="Episódio 1" />
+        <p>Episódio 1</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
