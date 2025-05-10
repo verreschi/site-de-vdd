@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Assistir - Jujutsu Kaisen</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="jujutsu.css" />
+</head>
+<body>
+
+  <header class="watch-header">
+    <a href="index.html" class="back-btn">⬅ Voltar para o Início</a>
+    <h1>Jujutsu Kaisen</h1>
+  </header>
+
+  <main class="watch-main">
+    <!-- Container do vídeo -->
+  <div class="video-container">
+  <video id="mainVideo" controls>
+    <source src="treilers/JUJUTSU KAISEN _ OFFICIAL TRAILER.mp4" type="video/mp4" />
+    Seu navegador não suporta o vídeo.
+  </video>
+
+  <button id="skipIntroBtn" class="skip-btn">Pular Abertura</button>
+
+  <div id="nextContainer" class="next-container">
+    <button id="nextEpisodeBtn" class="next-btn">Próximo Episódio</button>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+  </div>
+</div>
+
+    <!-- Seção para Selecionar a Temporada -->
+    <section class="season-selector">
+      <h2>Escolha a Temporada</h2>
+      <select id="seasonSelect">
+        <option value="season1.mp4">Temporada 1</option>
+        <option value="season2.mp4">Temporada 2</option>
+        <option value="season3.mp4">Temporada 3</option>
+      </select>
+    </section>
+
+    <!-- Seção de episódios -->
+    <section class="episodes">
+      <h2>Episódios</h2>
+      <div class="episode-list">
+        <div class="episode" data-video="videos/jujutsu_ep1.mp4">
+          <img src="capas/juju.jpeg" alt="Ep 1">
+          <p>Episódio 1</p>
+        </div>
+        <div class="episode" data-video="videos/jujutsu_ep2.mp4">
+          <img src="capas/juju.jpeg" alt="Ep 2">
+          <p>Episódio 2</p>
+        </div>
+        <div class="episode" data-video="videos/jujutsu_ep3.mp4">
+          <img src="capas/juju.jpeg" alt="Ep 3">
+          <p>Episódio 3</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Mais Temporadas -->
+    
+  </main>
+
+  <script src="assistir.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NetClone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Barra superior -->
+  <header>
+    <div class="logo">YKY</div>
+    <nav class="menu">
+      <a href="#">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Categorias</button>
+        <div class="dropdown-content">
+          <a href="#animes">Animes</a>
+          <a href="#filmes">Filmes</a>
+          <a href="#terror">Terror</a>
+          <a href="#romance">Romance</a>
+        </div>
+      </div>
+      <input type="text" id="search" placeholder="Buscar..." />
+    </nav>
+  </header>
+
+  <!-- Banner oculto inicialmente -->
+  <section class="banner" id="trailerBanner" style="display: none;">
+    <video id="bannerVideo" autoplay loop muted controls></video>
+    <div class="banner-info" id="bannerInfo">
+      <h1 id="bannerTitle">Título em Destaque</h1>
+      <p id="bannerDesc">Descrição rápida do conteúdo em destaque.</p>
+      <a id="watchButton" href="#" class="watch-btn">Assistir</a>
+    </div>
+    <div class="audio-controls">
+      <button id="muteBtn">🔇</button>
+      <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" />
+    </div>
+  </section>
+
+  <!-- Carrosséis de categorias -->
+  <section class="category" id="animes">
+    <h2>Animes</h2>
+    <div class="carousel">
+      <div class="card" data-trailer="treilers/JUJUTSU KAISEN _ OFFICIAL TRAILER.mp4" data-title="Jujutsu Kaisen" data-desc="Anime de ação e maldições." data-page="jujutsu.html">
+        <img src="capas/juju.jpeg" alt="Jujutsu Kaisen" />
+      </div>
+      <div class="card" data-trailer="treilers/JUJUTSU KAISEN _ OFFICIAL TRAILER.mp4" data-title="Jujutsu Kaisen" data-desc="Anime de ação e maldições." data-page="jujutsu.html">
+        <img src="capas/juju.jpeg" alt="Jujutsu Kaisen" />
+      </div>
+      <div class="card" data-trailer="treilers/JUJUTSU KAISEN _ OFFICIAL TRAILER.mp4" data-title="Jujutsu Kaisen" data-desc="Anime de ação e maldições." data-page="jujutsu.html">
+        <img src="capas/juju.jpeg" alt="Jujutsu Kaisen" />
+      </div>
+      <div class="card" data-trailer="treilers/JUJUTSU KAISEN _ OFFICIAL TRAILER.mp4" data-title="Jujutsu Kaisen" data-desc="Anime de ação e maldições." data-page="jujutsu.html">
+        <img src="capas/juju.jpeg" alt="Jujutsu Kaisen" />
+      </div>
+      <div class="card" data-trailer="treilers/JUJUTSU KAISEN _ OFFICIAL TRAILER.mp4" data-title="Jujutsu Kaisen" data-desc="Anime de ação e maldições." data-page="jujutsu.html">
+        <img src="capas/juju.jpeg" alt="Jujutsu Kaisen" />
+      </div>
+      <div class="card" data-trailer="treilers/JUJUTSU KAISEN _ OFFICIAL TRAILER.mp4" data-title="Jujutsu Kaisen" data-desc="Anime de ação e maldições." data-page="jujutsu.html">
+        <img src="capas/juju.jpeg" alt="Jujutsu Kaisen" />
+      </div>
+      <div class="card" data-trailer="treilers/JUJUTSU KAISEN _ OFFICIAL TRAILER.mp4" data-title="Jujutsu Kaisen" data-desc="Anime de ação e maldições." data-page="jujutsu.html">
+        <img src="capas/juju.jpeg" alt="Jujutsu Kaisen" />
+      </div>
+      <div class="card" data-trailer="treilers/JUJUTSU KAISEN _ OFFICIAL TRAILER.mp4" data-title="Jujutsu Kaisen" data-desc="Anime de ação e maldições." data-page="jujutsu.html">
+        <img src="capas/juju.jpeg" alt="Jujutsu Kaisen" />
+      </div>
+      <div class="card" data-trailer="treilers/JUJUTSU KAISEN _ OFFICIAL TRAILER.mp4" data-title="Jujutsu Kaisen" data-desc="Anime de ação e maldições." data-page="jujutsu.html">
+        <img src="capas/juju.jpeg" alt="Jujutsu Kaisen" />
+      </div>
+      <div class="card" data-trailer="treilers/JUJUTSU KAISEN _ OFFICIAL TRAILER.mp4" data-title="Jujutsu Kaisen" data-desc="Anime de ação e maldições." data-page="jujutsu.html">
+        <img src="capas/juju.jpeg" alt="Jujutsu Kaisen" />
+      </div>
+      <div class="card" data-trailer="treilers/JUJUTSU KAISEN _ OFFICIAL TRAILER.mp4" data-title="Jujutsu Kaisen" data-desc="Anime de ação e maldições." data-page="jujutsu.html">
+        <img src="capas/juju.jpeg" alt="Jujutsu Kaisen" />
+      </div>
+      <div class="card" data-trailer="treilers/JUJUTSU KAISEN _ OFFICIAL TRAILER.mp4" data-title="Jujutsu Kaisen" data-desc="Anime de ação e maldições." data-page="jujutsu.html">
+        <img src="capas/juju.jpeg" alt="Jujutsu Kaisen" />
+      </div>
+      <div class="card" data-trailer="treilers/JUJUTSU KAISEN _ OFFICIAL TRAILER.mp4" data-title="Jujutsu Kaisen" data-desc="Anime de ação e maldições." data-page="jujutsu.html">
+        <img src="capas/juju.jpeg" alt="Jujutsu Kaisen" />
+      </div>
+      <div class="card" data-trailer="treilers/JUJUTSU KAISEN _ OFFICIAL TRAILER.mp4" data-title="Jujutsu Kaisen" data-desc="Anime de ação e maldições." data-page="jujutsu.html">
+        <img src="capas/juju.jpeg" alt="Jujutsu Kaisen" />
+      </div>
+    </div>
+  </section>
+
+  <section class="category" id="filmes">
+    <h2>Filmes</h2>
+    <div class="carousel">
+      <div class="card" data-trailer="treilers/JUJUTSU KAISEN _ OFFICIAL TRAILER.mp4" data-title="Jujutsu Kaisen" data-desc="Anime de ação e maldições." data-page="jujutsu.html">
+        <img src="capas/juju.jpeg" alt="Jujutsu Kaisen" />
+      </div>
+      <div class="card" data-trailer="videos/yourname.mp4" data-title="Your Name" data-desc="Um romance com troca de corpos." data-page="yourname.html">
+        <img src="imagens/yourname.jpg" alt="Your Name" />
+      </div>
+    </div>
+  </section>
+
+  <section class="category" id="terror">
+    <h2>Terror</h2>
+    <div class="carousel">
+      <!-- Adicionar filmes de terror -->
+    </div>
+  </section>
+
+  <section class="category" id="romance">
+    <h2>Romance</h2>
+    <div class="carousel">
+      <!-- Adicionar filmes de romance -->
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
